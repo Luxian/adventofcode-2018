@@ -1,8 +1,10 @@
 <?php
-
+ini_set('memory_limit', '512M');
 $input = file_get_contents(__DIR__ . '/06-input.txt');
 $input_lines = explode("\n", trim($input));
 unset($input);
+
+define('MAX_TOTAL_DISTANCE', 10000); // part 2
 
 $coordinates = [];
 $iterations = 0;
@@ -40,6 +42,7 @@ foreach($input_lines as $line) {
 }
 
 $locations = [];
+$max_area_by_distance_sum = 0;
 for($x = $limits['x_min']; $x <= $limits['x_max']; $x++) {
     for($y = $limits['y_min']; $y <= $limits['y_max']; $y++) {
         $iterations++;
@@ -53,12 +56,16 @@ for($x = $limits['x_min']; $x <= $limits['x_max']; $x++) {
             'y' => $y,
             'min_distance' => PHP_INT_MAX,
             'coordinate_keys' => -1,
+            'distance_sum' => 0,
         ];
 
         foreach($coordinates as $key => $coordinate) {
             $iterations++;
 
             $distance = manhattan_distance($current_location, $coordinate);
+
+            $current_location['distance_sum'] += $distance;
+
             if ($distance <= $current_location['min_distance']) {
                 if ($distance < $current_location['min_distance']) {
                     $current_location['coordinate_keys'] = [];
@@ -81,6 +88,10 @@ for($x = $limits['x_min']; $x <= $limits['x_max']; $x++) {
             }
         }
 
+        if ($current_location['distance_sum'] < MAX_TOTAL_DISTANCE) {
+            $max_area_by_distance_sum++;
+        }
+
         $locations[$x][$y] = $current_location;
     }
 }
@@ -94,14 +105,10 @@ foreach($coordinates as $coordinate) {
 
 echo 'Iterations: ' . number_format($iterations, 0, '.', "'") . PHP_EOL;
 echo 'Max area: ' . $max_area . PHP_EOL;
+echo 'Max area by distance sum: ' . $max_area_by_distance_sum . PHP_EOL;
 
 // ---
-
 function manhattan_distance(array $point1, array $point2): int
 {
-    if (!isset($point2['x'])) {
-        var_dump($point2);
-        exit(1);
-    }
-    return abs($point1['x'] - $point2['x']) + abs($point1['y'] - $point2['x']);
+    return abs($point1['x'] - $point2['x']) + abs($point1['y'] - $point2['y']);
 }
