@@ -6,7 +6,6 @@ $lines = explode("\n", trim($input));
 $steps = [];
 foreach($lines as $line) {
     $step1 = $line[5];
-    /** @noinspection MultiAssignmentUsageInspection */
     $step2 = $line[36];
     if (!isset($steps[$step1]['step'])) {
         $steps[$step1]['step'] = $step1;
