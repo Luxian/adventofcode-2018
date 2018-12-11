@@ -6,6 +6,7 @@ $lines = explode("\n", trim($input));
 $steps = [];
 foreach($lines as $line) {
     $step1 = $line[5];
+    /** @noinspection MultiAssignmentUsageInspection */
     $step2 = $line[36];
     if (!isset($steps[$step1]['step'])) {
         $steps[$step1]['step'] = $step1;
@@ -21,6 +22,7 @@ foreach($lines as $line) {
 foreach(array_keys($steps) as $step) {
     $index = 0;
     $expanded_before = &$steps[$step]['before'];
+
     while($index < count($expanded_before)) {
         $current_before_element = $expanded_before[$index];
         if (isset($steps[$current_before_element]['before'])) {
@@ -35,6 +37,11 @@ foreach(array_keys($steps) as $step) {
     }
 }
 
+uasort($steps, function($a, $b) { return count($b['before']) - count($a['before']); });
+foreach($steps as $step) {
+    sort($step['before']);
+    echo $step['step'] . ' ' . implode('', $step['before']) . PHP_EOL;
+}
 //file_put_contents(__DIR__ . '/07-debug.txt', print_r($steps, true));
 
 
@@ -44,6 +51,7 @@ $bubble_sort = array_values($steps);
 $length = count($bubble_sort);
 for($i = 0; $i < $length -1; $i++) {
     for($j = $i+1; $j < $length; $j++) {
+        echo "step[{$i}] vs step[{$j}]" . PHP_EOL;
         $comparison = compare_steps($bubble_sort[$i], $bubble_sort[$j]);
         if ($comparison > 0) {
             $tmp = $bubble_sort[$i];
@@ -51,17 +59,18 @@ for($i = 0; $i < $length -1; $i++) {
             $bubble_sort[$j] = $tmp;
             unset($tmp);
         }
-        print_steps($steps);
+        print_steps($bubble_sort);
+        echo PHP_EOL;
     }
 }
-
-uasort($steps, 'compare_steps');
-
 
 //print_steps($steps);
 print_steps($bubble_sort);
 
-
+ob_start();
+uasort($steps, 'compare_steps');
+ob_end_clean();
+print_steps($steps);
 // ----
 
 /**
@@ -76,12 +85,9 @@ function print_steps(array $steps): void
     echo PHP_EOL;
 }
 
-/**
- * @return Closure
- */
 function compare_steps($a, $b): int
 {
-    echo "{$a['step']} vs {$b['step']} => ";
+    echo "Comparison {$a['step']} (" . implode('', $a['before']) . ") vs {$b['step']} (" . implode('', $b['before']) . ') => ';
 
     if (in_array($b['step'], $a['before'], true)) {
         echo -1 . '*' . PHP_EOL;

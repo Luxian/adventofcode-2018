@@ -1,478 +1,1328 @@
-Array
-(
-    [W] => Array
-        (
-            [step] => W
-            [before] => Array
-                (
-                    [0] => B
-                    [1] => U
-                    [2] => E
-                    [3] => M
-                    [4] => P
-                    [5] => S
-                    [6] => C
-                    [7] => Y
-                    [8] => F
-                    [9] => N
-                    [10] => X
-                    [11] => H
-                    [12] => Q
-                    [13] => L
-                    [14] => J
-                    [15] => T
-                    [16] => I
-                    [17] => O
-                    [18] => A
-                )
+G ACDEFHIJKLMNOPQSTUVXYZ
+W ABCEFHIJLMNOPQSTUXY
+K ACDFHIJLMNOPQTUXY
+B ACFHIJLMNOPQSTUXY
+V CFHIJLMNOQSTUX
+Y ACFHIJLMNOQTUX
+Z CDFHIJLNOPQTUX
+R CFHIJLMNOQTUX
+M CFHIJLNOQTUX
+A CFHIJLNOQTX
+D CFHIJLNOPQU
+E FHIJLNOPQX
+T FHIJLNOQX
+S HIJLNOQXl
+U CFHJLNOQ
+X HJLNOQ
+P HIJLNO
+C HJLNOQ
+Q HJLNO
+I HJLNO
+J HLNO
+F HLNO
+L HNO
+H NO
+N O
+O 
+step[0] vs step[1]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs W (BUEMPSCYFNXHQLJTIOA) => -16
+Steps: GWKBVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[2]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs K (QDYNUAJOHPMCFTLIX) => -1*
+Steps: GWKBVYZRMADETSUXPCQIJFLHNO
 
-    [B] => Array
-        (
-            [step] => B
-            [before] => Array
-                (
-                    [0] => P
-                    [1] => S
-                    [2] => C
-                    [3] => Y
-                    [4] => F
-                    [5] => J
-                    [6] => I
-                    [7] => H
-                    [8] => L
-                    [9] => N
-                    [10] => X
-                    [11] => O
-                    [12] => Q
-                    [13] => M
-                    [14] => A
-                    [15] => U
-                    [16] => T
-                )
+step[0] vs step[3]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs B (PSCYFJIHLNXOQMAUT) => 5
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[4]
+Comparison B (PSCYFJIHLNXOQMAUT) vs V (SINMXLOJUCTFHQ) => -20
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [G] => Array
-        (
-            [step] => G
-            [before] => Array
-                (
-                    [0] => T
-                    [1] => K
-                    [2] => Z
-                    [3] => M
-                    [4] => X
-                    [5] => V
-                    [6] => E
-                    [7] => F
-                    [8] => I
-                    [9] => Q
-                    [10] => N
-                    [11] => H
-                    [12] => D
-                    [13] => Y
-                    [14] => U
-                    [15] => A
-                    [16] => L
-                    [17] => C
-                    [18] => J
-                    [19] => O
-                    [20] => S
-                    [21] => P
-                )
+step[0] vs step[5]
+Comparison B (PSCYFJIHLNXOQMAUT) vs Y (JMHALOUCTFNQIX) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[6]
+Comparison B (PSCYFJIHLNXOQMAUT) vs Z (XNQITDHOJLFUPC) => -24
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [T] => Array
-        (
-            [step] => T
-            [before] => Array
-                (
-                    [0] => F
-                    [1] => I
-                    [2] => Q
-                    [3] => N
-                    [4] => H
-                    [5] => X
-                    [6] => L
-                    [7] => J
-                    [8] => O
-                )
+step[0] vs step[7]
+Comparison B (PSCYFJIHLNXOQMAUT) vs R (MCFLQHUJTNOIX) => -16
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[8]
+Comparison B (PSCYFJIHLNXOQMAUT) vs M (ULCJTFNOHQIX) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [P] => Array
-        (
-            [step] => P
-            [before] => Array
-                (
-                    [0] => J
-                    [1] => I
-                    [2] => H
-                    [3] => L
-                    [4] => N
-                    [5] => O
-                )
+step[0] vs step[9]
+Comparison B (PSCYFJIHLNXOQMAUT) vs A (CTHQLNFIXJO) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[10]
+Comparison B (PSCYFJIHLNXOQMAUT) vs D (UPNCFJIHLOQ) => -2
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [R] => Array
-        (
-            [step] => R
-            [before] => Array
-                (
-                    [0] => M
-                    [1] => C
-                    [2] => F
-                    [3] => L
-                    [4] => Q
-                    [5] => H
-                    [6] => U
-                    [7] => J
-                    [8] => T
-                    [9] => N
-                    [10] => O
-                    [11] => I
-                    [12] => X
-                )
+step[0] vs step[11]
+Comparison B (PSCYFJIHLNXOQMAUT) vs E (XHPFQONJLI) => -3
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[12]
+Comparison B (PSCYFJIHLNXOQMAUT) vs T (FIQNHXLJO) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [M] => Array
-        (
-            [step] => M
-            [before] => Array
-                (
-                    [0] => U
-                    [1] => L
-                    [2] => C
-                    [3] => J
-                    [4] => T
-                    [5] => F
-                    [6] => N
-                    [7] => O
-                    [8] => H
-                    [9] => Q
-                    [10] => I
-                    [11] => X
-                )
+step[0] vs step[13]
+Comparison B (PSCYFJIHLNXOQMAUT) vs S (NIXLOJHQ) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[14]
+Comparison B (PSCYFJIHLNXOQMAUT) vs U (CFNQLOJH) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [K] => Array
-        (
-            [step] => K
-            [before] => Array
-                (
-                    [0] => Q
-                    [1] => D
-                    [2] => Y
-                    [3] => N
-                    [4] => U
-                    [5] => A
-                    [6] => J
-                    [7] => O
-                    [8] => H
-                    [9] => P
-                    [10] => M
-                    [11] => C
-                    [12] => F
-                    [13] => T
-                    [14] => L
-                    [15] => I
-                    [16] => X
-                )
+step[0] vs step[15]
+Comparison B (PSCYFJIHLNXOQMAUT) vs X (HOQNJL) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[16]
+Comparison B (PSCYFJIHLNXOQMAUT) vs P (JIHLNO) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [Q] => Array
-        (
-            [step] => Q
-            [before] => Array
-                (
-                    [0] => J
-                    [1] => N
-                    [2] => O
-                    [3] => H
-                    [4] => L
-                )
+step[0] vs step[17]
+Comparison B (PSCYFJIHLNXOQMAUT) vs C (QLNJOH) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[18]
+Comparison B (PSCYFJIHLNXOQMAUT) vs Q (JNOHL) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [Z] => Array
-        (
-            [step] => Z
-            [before] => Array
-                (
-                    [0] => X
-                    [1] => N
-                    [2] => Q
-                    [3] => I
-                    [4] => T
-                    [5] => D
-                    [6] => H
-                    [7] => O
-                    [8] => J
-                    [9] => L
-                    [10] => F
-                    [11] => U
-                    [12] => P
-                    [13] => C
-                )
+step[0] vs step[19]
+Comparison B (PSCYFJIHLNXOQMAUT) vs I (LJNOH) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[20]
+Comparison B (PSCYFJIHLNXOQMAUT) vs J (LHON) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [X] => Array
-        (
-            [step] => X
-            [before] => Array
-                (
-                    [0] => H
-                    [1] => O
-                    [2] => Q
-                    [3] => N
-                    [4] => J
-                    [5] => L
-                )
+step[0] vs step[21]
+Comparison B (PSCYFJIHLNXOQMAUT) vs F (LNOH) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[22]
+Comparison B (PSCYFJIHLNXOQMAUT) vs L (NOH) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [V] => Array
-        (
-            [step] => V
-            [before] => Array
-                (
-                    [0] => S
-                    [1] => I
-                    [2] => N
-                    [3] => M
-                    [4] => X
-                    [5] => L
-                    [6] => O
-                    [7] => J
-                    [8] => U
-                    [9] => C
-                    [10] => T
-                    [11] => F
-                    [12] => H
-                    [13] => Q
-                )
+step[0] vs step[23]
+Comparison B (PSCYFJIHLNXOQMAUT) vs H (ON) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[0] vs step[24]
+Comparison B (PSCYFJIHLNXOQMAUT) vs N (O) => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-    [S] => Array
-        (
-            [step] => S
-            [before] => Array
-                (
-                    [0] => N
-                    [1] => I
-                    [2] => X
-                    [3] => L
-                    [4] => O
-                    [5] => J
-                    [6] => H
-                    [7] => Q
-                )
+step[0] vs step[25]
+Comparison B (PSCYFJIHLNXOQMAUT) vs O () => -1*
+Steps: BWKGVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[2]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs K (QDYNUAJOHPMCFTLIX) => 12
+Steps: BKWGVYZRMADETSUXPCQIJFLHNO
 
-    [D] => Array
-        (
-            [step] => D
-            [before] => Array
-                (
-                    [0] => U
-                    [1] => P
-                    [2] => N
-                    [3] => C
-                    [4] => F
-                    [5] => J
-                    [6] => I
-                    [7] => H
-                    [8] => L
-                    [9] => O
-                    [10] => Q
-                )
+step[1] vs step[3]
+Comparison K (QDYNUAJOHPMCFTLIX) vs G (TKZMXVEFIQNHDYUALCJOSP) => 1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[4]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs V (SINMXLOJUCTFHQ) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [U] => Array
-        (
-            [step] => U
-            [before] => Array
-                (
-                    [0] => C
-                    [1] => F
-                    [2] => N
-                    [3] => Q
-                    [4] => L
-                    [5] => O
-                    [6] => J
-                    [7] => H
-                )
+step[1] vs step[5]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs Y (JMHALOUCTFNQIX) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[6]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs Z (XNQITDHOJLFUPC) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [Y] => Array
-        (
-            [step] => Y
-            [before] => Array
-                (
-                    [0] => J
-                    [1] => M
-                    [2] => H
-                    [3] => A
-                    [4] => L
-                    [5] => O
-                    [6] => U
-                    [7] => C
-                    [8] => T
-                    [9] => F
-                    [10] => N
-                    [11] => Q
-                    [12] => I
-                    [13] => X
-                )
+step[1] vs step[7]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs R (MCFLQHUJTNOIX) => -11
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[8]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs M (ULCJTFNOHQIX) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [J] => Array
-        (
-            [step] => J
-            [before] => Array
-                (
-                    [0] => L
-                    [1] => H
-                    [2] => O
-                    [3] => N
-                )
+step[1] vs step[9]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs A (CTHQLNFIXJO) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[10]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs D (UPNCFJIHLOQ) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [A] => Array
-        (
-            [step] => A
-            [before] => Array
-                (
-                    [0] => C
-                    [1] => T
-                    [2] => H
-                    [3] => Q
-                    [4] => L
-                    [5] => N
-                    [6] => F
-                    [7] => I
-                    [8] => X
-                    [9] => J
-                    [10] => O
-                )
+step[1] vs step[11]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs E (XHPFQONJLI) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[12]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs T (FIQNHXLJO) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [C] => Array
-        (
-            [step] => C
-            [before] => Array
-                (
-                    [0] => Q
-                    [1] => L
-                    [2] => N
-                    [3] => J
-                    [4] => O
-                    [5] => H
-                )
+step[1] vs step[13]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs S (NIXLOJHQ) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[14]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs U (CFNQLOJH) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [E] => Array
-        (
-            [step] => E
-            [before] => Array
-                (
-                    [0] => X
-                    [1] => H
-                    [2] => P
-                    [3] => F
-                    [4] => Q
-                    [5] => O
-                    [6] => N
-                    [7] => J
-                    [8] => L
-                    [9] => I
-                )
+step[1] vs step[15]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs X (HOQNJL) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[16]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs P (JIHLNO) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [F] => Array
-        (
-            [step] => F
-            [before] => Array
-                (
-                    [0] => L
-                    [1] => N
-                    [2] => O
-                    [3] => H
-                )
+step[1] vs step[17]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs C (QLNJOH) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[18]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs Q (JNOHL) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [N] => Array
-        (
-            [step] => N
-            [before] => Array
-                (
-                    [0] => O
-                )
+step[1] vs step[19]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs I (LJNOH) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[20]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs J (LHON) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [H] => Array
-        (
-            [step] => H
-            [before] => Array
-                (
-                    [0] => O
-                    [1] => N
-                )
+step[1] vs step[21]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs F (LNOH) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[22]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs L (NOH) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [L] => Array
-        (
-            [step] => L
-            [before] => Array
-                (
-                    [0] => N
-                    [1] => O
-                    [2] => H
-                )
+step[1] vs step[23]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs H (ON) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[1] vs step[24]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs N (O) => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-    [I] => Array
-        (
-            [step] => I
-            [before] => Array
-                (
-                    [0] => L
-                    [1] => J
-                    [2] => N
-                    [3] => O
-                    [4] => H
-                )
+step[1] vs step[25]
+Comparison G (TKZMXVEFIQNHDYUALCJOSP) vs O () => -1*
+Steps: BGWKVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[2] vs step[3]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs K (QDYNUAJOHPMCFTLIX) => 12
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
 
-    [O] => Array
-        (
-            [step] => O
-            [before] => Array
-                (
-                )
+step[2] vs step[4]
+Comparison K (QDYNUAJOHPMCFTLIX) vs V (SINMXLOJUCTFHQ) => -11
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
 
-        )
+step[2] vs step[5]
+Comparison K (QDYNUAJOHPMCFTLIX) vs Y (JMHALOUCTFNQIX) => -1*
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
 
-)
+step[2] vs step[6]
+Comparison K (QDYNUAJOHPMCFTLIX) vs Z (XNQITDHOJLFUPC) => -15
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
+
+step[2] vs step[7]
+Comparison K (QDYNUAJOHPMCFTLIX) vs R (MCFLQHUJTNOIX) => -7
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
+
+step[2] vs step[8]
+Comparison K (QDYNUAJOHPMCFTLIX) vs M (ULCJTFNOHQIX) => -1*
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
+
+step[2] vs step[9]
+Comparison K (QDYNUAJOHPMCFTLIX) vs A (CTHQLNFIXJO) => -1*
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
+
+step[2] vs step[10]
+Comparison K (QDYNUAJOHPMCFTLIX) vs D (UPNCFJIHLOQ) => -1*
+Steps: BGKWVYZRMADETSUXPCQIJFLHNO
+
+step[2] vs step[11]
+Comparison K (QDYNUAJOHPMCFTLIX) vs E (XHPFQONJLI) => 6
+Steps: BGEWVYZRMADKTSUXPCQIJFLHNO
+
+step[2] vs step[12]
+Comparison E (XHPFQONJLI) vs T (FIQNHXLJO) => -15
+Steps: BGEWVYZRMADKTSUXPCQIJFLHNO
+
+step[2] vs step[13]
+Comparison E (XHPFQONJLI) vs S (NIXLOJHQ) => -14
+Steps: BGEWVYZRMADKTSUXPCQIJFLHNO
+
+step[2] vs step[14]
+Comparison E (XHPFQONJLI) vs U (CFNQLOJH) => -16
+Steps: BGEWVYZRMADKTSUXPCQIJFLHNO
+
+step[2] vs step[15]
+Comparison E (XHPFQONJLI) vs X (HOQNJL) => -1*
+Steps: BGEWVYZRMADKTSUXPCQIJFLHNO
+
+step[2] vs step[16]
+Comparison E (XHPFQONJLI) vs P (JIHLNO) => -1*
+Steps: BGEWVYZRMADKTSUXPCQIJFLHNO
+
+step[2] vs step[17]
+Comparison E (XHPFQONJLI) vs C (QLNJOH) => 2
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[18]
+Comparison C (QLNJOH) vs Q (JNOHL) => -1*
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[19]
+Comparison C (QLNJOH) vs I (LJNOH) => -6
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[20]
+Comparison C (QLNJOH) vs J (LHON) => -1*
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[21]
+Comparison C (QLNJOH) vs F (LNOH) => -3
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[22]
+Comparison C (QLNJOH) vs L (NOH) => -1*
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[23]
+Comparison C (QLNJOH) vs H (ON) => -1*
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[24]
+Comparison C (QLNJOH) vs N (O) => -1*
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[2] vs step[25]
+Comparison C (QLNJOH) vs O () => -1*
+Steps: BGCWVYZRMADKTSUXPEQIJFLHNO
+
+step[3] vs step[4]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCVWYZRMADKTSUXPEQIJFLHNO
+
+step[3] vs step[5]
+Comparison V (SINMXLOJUCTFHQ) vs Y (JMHALOUCTFNQIX) => -3
+Steps: BGCVWYZRMADKTSUXPEQIJFLHNO
+
+step[3] vs step[6]
+Comparison V (SINMXLOJUCTFHQ) vs Z (XNQITDHOJLFUPC) => -4
+Steps: BGCVWYZRMADKTSUXPEQIJFLHNO
+
+step[3] vs step[7]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCRWYZVMADKTSUXPEQIJFLHNO
+
+step[3] vs step[8]
+Comparison R (MCFLQHUJTNOIX) vs M (ULCJTFNOHQIX) => -1*
+Steps: BGCRWYZVMADKTSUXPEQIJFLHNO
+
+step[3] vs step[9]
+Comparison R (MCFLQHUJTNOIX) vs A (CTHQLNFIXJO) => 17
+Steps: BGCAWYZVMRDKTSUXPEQIJFLHNO
+
+step[3] vs step[10]
+Comparison A (CTHQLNFIXJO) vs D (UPNCFJIHLOQ) => -3
+Steps: BGCAWYZVMRDKTSUXPEQIJFLHNO
+
+step[3] vs step[11]
+Comparison A (CTHQLNFIXJO) vs K (QDYNUAJOHPMCFTLIX) => 1*
+Steps: BGCKWYZVMRDATSUXPEQIJFLHNO
+
+step[3] vs step[12]
+Comparison K (QDYNUAJOHPMCFTLIX) vs T (FIQNHXLJO) => -1*
+Steps: BGCKWYZVMRDATSUXPEQIJFLHNO
+
+step[3] vs step[13]
+Comparison K (QDYNUAJOHPMCFTLIX) vs S (NIXLOJHQ) => -8
+Steps: BGCKWYZVMRDATSUXPEQIJFLHNO
+
+step[3] vs step[14]
+Comparison K (QDYNUAJOHPMCFTLIX) vs U (CFNQLOJH) => -1*
+Steps: BGCKWYZVMRDATSUXPEQIJFLHNO
+
+step[3] vs step[15]
+Comparison K (QDYNUAJOHPMCFTLIX) vs X (HOQNJL) => -1*
+Steps: BGCKWYZVMRDATSUXPEQIJFLHNO
+
+step[3] vs step[16]
+Comparison K (QDYNUAJOHPMCFTLIX) vs P (JIHLNO) => -1*
+Steps: BGCKWYZVMRDATSUXPEQIJFLHNO
+
+step[3] vs step[17]
+Comparison K (QDYNUAJOHPMCFTLIX) vs E (XHPFQONJLI) => 6
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[18]
+Comparison E (XHPFQONJLI) vs Q (JNOHL) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[19]
+Comparison E (XHPFQONJLI) vs I (LJNOH) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[20]
+Comparison E (XHPFQONJLI) vs J (LHON) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[21]
+Comparison E (XHPFQONJLI) vs F (LNOH) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[22]
+Comparison E (XHPFQONJLI) vs L (NOH) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[23]
+Comparison E (XHPFQONJLI) vs H (ON) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[24]
+Comparison E (XHPFQONJLI) vs N (O) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[3] vs step[25]
+Comparison E (XHPFQONJLI) vs O () => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[4] vs step[5]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs Y (JMHALOUCTFNQIX) => -1*
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[4] vs step[6]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs Z (XNQITDHOJLFUPC) => -3
+Steps: BGCEWYZVMRDATSUXPKQIJFLHNO
+
+step[4] vs step[7]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEVYZWMRDATSUXPKQIJFLHNO
+
+step[4] vs step[8]
+Comparison V (SINMXLOJUCTFHQ) vs M (ULCJTFNOHQIX) => -1*
+Steps: BGCEVYZWMRDATSUXPKQIJFLHNO
+
+step[4] vs step[9]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCERYZWMVDATSUXPKQIJFLHNO
+
+step[4] vs step[10]
+Comparison R (MCFLQHUJTNOIX) vs D (UPNCFJIHLOQ) => 14
+Steps: BGCEDYZWMVRATSUXPKQIJFLHNO
+
+step[4] vs step[11]
+Comparison D (UPNCFJIHLOQ) vs A (CTHQLNFIXJO) => 3
+Steps: BGCEAYZWMVRDTSUXPKQIJFLHNO
+
+step[4] vs step[12]
+Comparison A (CTHQLNFIXJO) vs T (FIQNHXLJO) => -1*
+Steps: BGCEAYZWMVRDTSUXPKQIJFLHNO
+
+step[4] vs step[13]
+Comparison A (CTHQLNFIXJO) vs S (NIXLOJHQ) => -18
+Steps: BGCEAYZWMVRDTSUXPKQIJFLHNO
+
+step[4] vs step[14]
+Comparison A (CTHQLNFIXJO) vs U (CFNQLOJH) => -20
+Steps: BGCEAYZWMVRDTSUXPKQIJFLHNO
+
+step[4] vs step[15]
+Comparison A (CTHQLNFIXJO) vs X (HOQNJL) => -1*
+Steps: BGCEAYZWMVRDTSUXPKQIJFLHNO
+
+step[4] vs step[16]
+Comparison A (CTHQLNFIXJO) vs P (JIHLNO) => -15
+Steps: BGCEAYZWMVRDTSUXPKQIJFLHNO
+
+step[4] vs step[17]
+Comparison A (CTHQLNFIXJO) vs K (QDYNUAJOHPMCFTLIX) => 1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[18]
+Comparison K (QDYNUAJOHPMCFTLIX) vs Q (JNOHL) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[19]
+Comparison K (QDYNUAJOHPMCFTLIX) vs I (LJNOH) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[20]
+Comparison K (QDYNUAJOHPMCFTLIX) vs J (LHON) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[21]
+Comparison K (QDYNUAJOHPMCFTLIX) vs F (LNOH) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[22]
+Comparison K (QDYNUAJOHPMCFTLIX) vs L (NOH) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[23]
+Comparison K (QDYNUAJOHPMCFTLIX) vs H (ON) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[24]
+Comparison K (QDYNUAJOHPMCFTLIX) vs N (O) => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[4] vs step[25]
+Comparison K (QDYNUAJOHPMCFTLIX) vs O () => -1*
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[5] vs step[6]
+Comparison Y (JMHALOUCTFNQIX) vs Z (XNQITDHOJLFUPC) => -1
+Steps: BGCEKYZWMVRDTSUXPAQIJFLHNO
+
+step[5] vs step[7]
+Comparison Y (JMHALOUCTFNQIX) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKWZYMVRDTSUXPAQIJFLHNO
+
+step[5] vs step[8]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs M (ULCJTFNOHQIX) => -1*
+Steps: BGCEKWZYMVRDTSUXPAQIJFLHNO
+
+step[5] vs step[9]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEKVZYMWRDTSUXPAQIJFLHNO
+
+step[5] vs step[10]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCEKRZYMWVDTSUXPAQIJFLHNO
+
+step[5] vs step[11]
+Comparison R (MCFLQHUJTNOIX) vs D (UPNCFJIHLOQ) => 14
+Steps: BGCEKDZYMWVRTSUXPAQIJFLHNO
+
+step[5] vs step[12]
+Comparison D (UPNCFJIHLOQ) vs T (FIQNHXLJO) => -16
+Steps: BGCEKDZYMWVRTSUXPAQIJFLHNO
+
+step[5] vs step[13]
+Comparison D (UPNCFJIHLOQ) vs S (NIXLOJHQ) => -15
+Steps: BGCEKDZYMWVRTSUXPAQIJFLHNO
+
+step[5] vs step[14]
+Comparison D (UPNCFJIHLOQ) vs U (CFNQLOJH) => -1*
+Steps: BGCEKDZYMWVRTSUXPAQIJFLHNO
+
+step[5] vs step[15]
+Comparison D (UPNCFJIHLOQ) vs X (HOQNJL) => -20
+Steps: BGCEKDZYMWVRTSUXPAQIJFLHNO
+
+step[5] vs step[16]
+Comparison D (UPNCFJIHLOQ) vs P (JIHLNO) => -1*
+Steps: BGCEKDZYMWVRTSUXPAQIJFLHNO
+
+step[5] vs step[17]
+Comparison D (UPNCFJIHLOQ) vs A (CTHQLNFIXJO) => 3
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[18]
+Comparison A (CTHQLNFIXJO) vs Q (JNOHL) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[19]
+Comparison A (CTHQLNFIXJO) vs I (LJNOH) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[20]
+Comparison A (CTHQLNFIXJO) vs J (LHON) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[21]
+Comparison A (CTHQLNFIXJO) vs F (LNOH) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[22]
+Comparison A (CTHQLNFIXJO) vs L (NOH) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[23]
+Comparison A (CTHQLNFIXJO) vs H (ON) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[24]
+Comparison A (CTHQLNFIXJO) vs N (O) => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[5] vs step[25]
+Comparison A (CTHQLNFIXJO) vs O () => -1*
+Steps: BGCEKAZYMWVRTSUXPDQIJFLHNO
+
+step[6] vs step[7]
+Comparison Z (XNQITDHOJLFUPC) vs Y (JMHALOUCTFNQIX) => 1
+Steps: BGCEKAYZMWVRTSUXPDQIJFLHNO
+
+step[6] vs step[8]
+Comparison Y (JMHALOUCTFNQIX) vs M (ULCJTFNOHQIX) => -1*
+Steps: BGCEKAYZMWVRTSUXPDQIJFLHNO
+
+step[6] vs step[9]
+Comparison Y (JMHALOUCTFNQIX) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKAWZMYVRTSUXPDQIJFLHNO
+
+step[6] vs step[10]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEKAVZMYWRTSUXPDQIJFLHNO
+
+step[6] vs step[11]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCEKARZMYWVTSUXPDQIJFLHNO
+
+step[6] vs step[12]
+Comparison R (MCFLQHUJTNOIX) vs T (FIQNHXLJO) => -1*
+Steps: BGCEKARZMYWVTSUXPDQIJFLHNO
+
+step[6] vs step[13]
+Comparison R (MCFLQHUJTNOIX) vs S (NIXLOJHQ) => -1
+Steps: BGCEKARZMYWVTSUXPDQIJFLHNO
+
+step[6] vs step[14]
+Comparison R (MCFLQHUJTNOIX) vs U (CFNQLOJH) => -1*
+Steps: BGCEKARZMYWVTSUXPDQIJFLHNO
+
+step[6] vs step[15]
+Comparison R (MCFLQHUJTNOIX) vs X (HOQNJL) => -1*
+Steps: BGCEKARZMYWVTSUXPDQIJFLHNO
+
+step[6] vs step[16]
+Comparison R (MCFLQHUJTNOIX) vs P (JIHLNO) => 2
+Steps: BGCEKAPZMYWVTSUXRDQIJFLHNO
+
+step[6] vs step[17]
+Comparison P (JIHLNO) vs D (UPNCFJIHLOQ) => 1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[18]
+Comparison D (UPNCFJIHLOQ) vs Q (JNOHL) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[19]
+Comparison D (UPNCFJIHLOQ) vs I (LJNOH) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[20]
+Comparison D (UPNCFJIHLOQ) vs J (LHON) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[21]
+Comparison D (UPNCFJIHLOQ) vs F (LNOH) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[22]
+Comparison D (UPNCFJIHLOQ) vs L (NOH) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[23]
+Comparison D (UPNCFJIHLOQ) vs H (ON) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[24]
+Comparison D (UPNCFJIHLOQ) vs N (O) => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[6] vs step[25]
+Comparison D (UPNCFJIHLOQ) vs O () => -1*
+Steps: BGCEKADZMYWVTSUXRPQIJFLHNO
+
+step[7] vs step[8]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADMZYWVTSUXRPQIJFLHNO
+
+step[7] vs step[9]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADYZMWVTSUXRPQIJFLHNO
+
+step[7] vs step[10]
+Comparison Y (JMHALOUCTFNQIX) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKADWZMYVTSUXRPQIJFLHNO
+
+step[7] vs step[11]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEKADVZMYWTSUXRPQIJFLHNO
+
+step[7] vs step[12]
+Comparison V (SINMXLOJUCTFHQ) vs T (FIQNHXLJO) => -1*
+Steps: BGCEKADVZMYWTSUXRPQIJFLHNO
+
+step[7] vs step[13]
+Comparison V (SINMXLOJUCTFHQ) vs S (NIXLOJHQ) => -1*
+Steps: BGCEKADVZMYWTSUXRPQIJFLHNO
+
+step[7] vs step[14]
+Comparison V (SINMXLOJUCTFHQ) vs U (CFNQLOJH) => -1*
+Steps: BGCEKADVZMYWTSUXRPQIJFLHNO
+
+step[7] vs step[15]
+Comparison V (SINMXLOJUCTFHQ) vs X (HOQNJL) => -1*
+Steps: BGCEKADVZMYWTSUXRPQIJFLHNO
+
+step[7] vs step[16]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCEKADRZMYWTSUXVPQIJFLHNO
+
+step[7] vs step[17]
+Comparison R (MCFLQHUJTNOIX) vs P (JIHLNO) => 2
+Steps: BGCEKADPZMYWTSUXVRQIJFLHNO
+
+step[7] vs step[18]
+Comparison P (JIHLNO) vs Q (JNOHL) => -1
+Steps: BGCEKADPZMYWTSUXVRQIJFLHNO
+
+step[7] vs step[19]
+Comparison P (JIHLNO) vs I (LJNOH) => -1*
+Steps: BGCEKADPZMYWTSUXVRQIJFLHNO
+
+step[7] vs step[20]
+Comparison P (JIHLNO) vs J (LHON) => -1*
+Steps: BGCEKADPZMYWTSUXVRQIJFLHNO
+
+step[7] vs step[21]
+Comparison P (JIHLNO) vs F (LNOH) => 10
+Steps: BGCEKADFZMYWTSUXVRQIJPLHNO
+
+step[7] vs step[22]
+Comparison F (LNOH) vs L (NOH) => -1*
+Steps: BGCEKADFZMYWTSUXVRQIJPLHNO
+
+step[7] vs step[23]
+Comparison F (LNOH) vs H (ON) => -1*
+Steps: BGCEKADFZMYWTSUXVRQIJPLHNO
+
+step[7] vs step[24]
+Comparison F (LNOH) vs N (O) => -1*
+Steps: BGCEKADFZMYWTSUXVRQIJPLHNO
+
+step[7] vs step[25]
+Comparison F (LNOH) vs O () => -1*
+Steps: BGCEKADFZMYWTSUXVRQIJPLHNO
+
+step[8] vs step[9]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFMZYWTSUXVRQIJPLHNO
+
+step[8] vs step[10]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADFYZMWTSUXVRQIJPLHNO
+
+step[8] vs step[11]
+Comparison Y (JMHALOUCTFNQIX) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKADFWZMYTSUXVRQIJPLHNO
+
+step[8] vs step[12]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs T (FIQNHXLJO) => -1*
+Steps: BGCEKADFWZMYTSUXVRQIJPLHNO
+
+step[8] vs step[13]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs S (NIXLOJHQ) => -1*
+Steps: BGCEKADFWZMYTSUXVRQIJPLHNO
+
+step[8] vs step[14]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs U (CFNQLOJH) => -1*
+Steps: BGCEKADFWZMYTSUXVRQIJPLHNO
+
+step[8] vs step[15]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs X (HOQNJL) => -1*
+Steps: BGCEKADFWZMYTSUXVRQIJPLHNO
+
+step[8] vs step[16]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEKADFVZMYTSUXWRQIJPLHNO
+
+step[8] vs step[17]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCEKADFRZMYTSUXWVQIJPLHNO
+
+step[8] vs step[18]
+Comparison R (MCFLQHUJTNOIX) vs Q (JNOHL) => -1*
+Steps: BGCEKADFRZMYTSUXWVQIJPLHNO
+
+step[8] vs step[19]
+Comparison R (MCFLQHUJTNOIX) vs I (LJNOH) => -1*
+Steps: BGCEKADFRZMYTSUXWVQIJPLHNO
+
+step[8] vs step[20]
+Comparison R (MCFLQHUJTNOIX) vs J (LHON) => -1*
+Steps: BGCEKADFRZMYTSUXWVQIJPLHNO
+
+step[8] vs step[21]
+Comparison R (MCFLQHUJTNOIX) vs P (JIHLNO) => 2
+Steps: BGCEKADFPZMYTSUXWVQIJRLHNO
+
+step[8] vs step[22]
+Comparison P (JIHLNO) vs L (NOH) => -1*
+Steps: BGCEKADFPZMYTSUXWVQIJRLHNO
+
+step[8] vs step[23]
+Comparison P (JIHLNO) vs H (ON) => -1*
+Steps: BGCEKADFPZMYTSUXWVQIJRLHNO
+
+step[8] vs step[24]
+Comparison P (JIHLNO) vs N (O) => -1*
+Steps: BGCEKADFPZMYTSUXWVQIJRLHNO
+
+step[8] vs step[25]
+Comparison P (JIHLNO) vs O () => -1*
+Steps: BGCEKADFPZMYTSUXWVQIJRLHNO
+
+step[9] vs step[10]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFPMZYTSUXWVQIJRLHNO
+
+step[9] vs step[11]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADFPYZMTSUXWVQIJRLHNO
+
+step[9] vs step[12]
+Comparison Y (JMHALOUCTFNQIX) vs T (FIQNHXLJO) => -1*
+Steps: BGCEKADFPYZMTSUXWVQIJRLHNO
+
+step[9] vs step[13]
+Comparison Y (JMHALOUCTFNQIX) vs S (NIXLOJHQ) => 6
+Steps: BGCEKADFPSZMTYUXWVQIJRLHNO
+
+step[9] vs step[14]
+Comparison S (NIXLOJHQ) vs U (CFNQLOJH) => -2
+Steps: BGCEKADFPSZMTYUXWVQIJRLHNO
+
+step[9] vs step[15]
+Comparison S (NIXLOJHQ) vs X (HOQNJL) => -1*
+Steps: BGCEKADFPSZMTYUXWVQIJRLHNO
+
+step[9] vs step[16]
+Comparison S (NIXLOJHQ) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKADFPWZMTYUXSVQIJRLHNO
+
+step[9] vs step[17]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEKADFPVZMTYUXSWQIJRLHNO
+
+step[9] vs step[18]
+Comparison V (SINMXLOJUCTFHQ) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPVZMTYUXSWQIJRLHNO
+
+step[9] vs step[19]
+Comparison V (SINMXLOJUCTFHQ) vs I (LJNOH) => -1*
+Steps: BGCEKADFPVZMTYUXSWQIJRLHNO
+
+step[9] vs step[20]
+Comparison V (SINMXLOJUCTFHQ) vs J (LHON) => -1*
+Steps: BGCEKADFPVZMTYUXSWQIJRLHNO
+
+step[9] vs step[21]
+Comparison V (SINMXLOJUCTFHQ) vs R (MCFLQHUJTNOIX) => 4
+Steps: BGCEKADFPRZMTYUXSWQIJVLHNO
+
+step[9] vs step[22]
+Comparison R (MCFLQHUJTNOIX) vs L (NOH) => -1*
+Steps: BGCEKADFPRZMTYUXSWQIJVLHNO
+
+step[9] vs step[23]
+Comparison R (MCFLQHUJTNOIX) vs H (ON) => -1*
+Steps: BGCEKADFPRZMTYUXSWQIJVLHNO
+
+step[9] vs step[24]
+Comparison R (MCFLQHUJTNOIX) vs N (O) => -1*
+Steps: BGCEKADFPRZMTYUXSWQIJVLHNO
+
+step[9] vs step[25]
+Comparison R (MCFLQHUJTNOIX) vs O () => -1*
+Steps: BGCEKADFPRZMTYUXSWQIJVLHNO
+
+step[10] vs step[11]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFPRMZTYUXSWQIJVLHNO
+
+step[10] vs step[12]
+Comparison M (ULCJTFNOHQIX) vs T (FIQNHXLJO) => -1*
+Steps: BGCEKADFPRMZTYUXSWQIJVLHNO
+
+step[10] vs step[13]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADFPRYZTMUXSWQIJVLHNO
+
+step[10] vs step[14]
+Comparison Y (JMHALOUCTFNQIX) vs U (CFNQLOJH) => -1*
+Steps: BGCEKADFPRYZTMUXSWQIJVLHNO
+
+step[10] vs step[15]
+Comparison Y (JMHALOUCTFNQIX) vs X (HOQNJL) => -1*
+Steps: BGCEKADFPRYZTMUXSWQIJVLHNO
+
+step[10] vs step[16]
+Comparison Y (JMHALOUCTFNQIX) vs S (NIXLOJHQ) => 6
+Steps: BGCEKADFPRSZTMUXYWQIJVLHNO
+
+step[10] vs step[17]
+Comparison S (NIXLOJHQ) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKADFPRWZTMUXYSQIJVLHNO
+
+step[10] vs step[18]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRWZTMUXYSQIJVLHNO
+
+step[10] vs step[19]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs I (LJNOH) => -1*
+Steps: BGCEKADFPRWZTMUXYSQIJVLHNO
+
+step[10] vs step[20]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs J (LHON) => -1*
+Steps: BGCEKADFPRWZTMUXYSQIJVLHNO
+
+step[10] vs step[21]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs V (SINMXLOJUCTFHQ) => 1
+Steps: BGCEKADFPRVZTMUXYSQIJWLHNO
+
+step[10] vs step[22]
+Comparison V (SINMXLOJUCTFHQ) vs L (NOH) => -1*
+Steps: BGCEKADFPRVZTMUXYSQIJWLHNO
+
+step[10] vs step[23]
+Comparison V (SINMXLOJUCTFHQ) vs H (ON) => -1*
+Steps: BGCEKADFPRVZTMUXYSQIJWLHNO
+
+step[10] vs step[24]
+Comparison V (SINMXLOJUCTFHQ) vs N (O) => -1*
+Steps: BGCEKADFPRVZTMUXYSQIJWLHNO
+
+step[10] vs step[25]
+Comparison V (SINMXLOJUCTFHQ) vs O () => -1*
+Steps: BGCEKADFPRVZTMUXYSQIJWLHNO
+
+step[11] vs step[12]
+Comparison Z (XNQITDHOJLFUPC) vs T (FIQNHXLJO) => -1*
+Steps: BGCEKADFPRVZTMUXYSQIJWLHNO
+
+step[11] vs step[13]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFPRVMTZUXYSQIJWLHNO
+
+step[11] vs step[14]
+Comparison M (ULCJTFNOHQIX) vs U (CFNQLOJH) => -1*
+Steps: BGCEKADFPRVMTZUXYSQIJWLHNO
+
+step[11] vs step[15]
+Comparison M (ULCJTFNOHQIX) vs X (HOQNJL) => -1*
+Steps: BGCEKADFPRVMTZUXYSQIJWLHNO
+
+step[11] vs step[16]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADFPRVYTZUXMSQIJWLHNO
+
+step[11] vs step[17]
+Comparison Y (JMHALOUCTFNQIX) vs S (NIXLOJHQ) => 6
+Steps: BGCEKADFPRVSTZUXMYQIJWLHNO
+
+step[11] vs step[18]
+Comparison S (NIXLOJHQ) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVSTZUXMYQIJWLHNO
+
+step[11] vs step[19]
+Comparison S (NIXLOJHQ) vs I (LJNOH) => -1*
+Steps: BGCEKADFPRVSTZUXMYQIJWLHNO
+
+step[11] vs step[20]
+Comparison S (NIXLOJHQ) vs J (LHON) => -1*
+Steps: BGCEKADFPRVSTZUXMYQIJWLHNO
+
+step[11] vs step[21]
+Comparison S (NIXLOJHQ) vs W (BUEMPSCYFNXHQLJTIOA) => 1*
+Steps: BGCEKADFPRVWTZUXMYQIJSLHNO
+
+step[11] vs step[22]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWTZUXMYQIJSLHNO
+
+step[11] vs step[23]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs H (ON) => -1*
+Steps: BGCEKADFPRVWTZUXMYQIJSLHNO
+
+step[11] vs step[24]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs N (O) => -1*
+Steps: BGCEKADFPRVWTZUXMYQIJSLHNO
+
+step[11] vs step[25]
+Comparison W (BUEMPSCYFNXHQLJTIOA) vs O () => -1*
+Steps: BGCEKADFPRVWTZUXMYQIJSLHNO
+
+step[12] vs step[13]
+Comparison T (FIQNHXLJO) vs Z (XNQITDHOJLFUPC) => 1*
+Steps: BGCEKADFPRVWZTUXMYQIJSLHNO
+
+step[12] vs step[14]
+Comparison Z (XNQITDHOJLFUPC) vs U (CFNQLOJH) => -1*
+Steps: BGCEKADFPRVWZTUXMYQIJSLHNO
+
+step[12] vs step[15]
+Comparison Z (XNQITDHOJLFUPC) vs X (HOQNJL) => -1*
+Steps: BGCEKADFPRVWZTUXMYQIJSLHNO
+
+step[12] vs step[16]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFPRVWMTUXZYQIJSLHNO
+
+step[12] vs step[17]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADFPRVWYTUXZMQIJSLHNO
+
+step[12] vs step[18]
+Comparison Y (JMHALOUCTFNQIX) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVWYTUXZMQIJSLHNO
+
+step[12] vs step[19]
+Comparison Y (JMHALOUCTFNQIX) vs I (LJNOH) => -1*
+Steps: BGCEKADFPRVWYTUXZMQIJSLHNO
+
+step[12] vs step[20]
+Comparison Y (JMHALOUCTFNQIX) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWYTUXZMQIJSLHNO
+
+step[12] vs step[21]
+Comparison Y (JMHALOUCTFNQIX) vs S (NIXLOJHQ) => 6
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[12] vs step[22]
+Comparison S (NIXLOJHQ) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[12] vs step[23]
+Comparison S (NIXLOJHQ) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[12] vs step[24]
+Comparison S (NIXLOJHQ) vs N (O) => -1*
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[12] vs step[25]
+Comparison S (NIXLOJHQ) vs O () => -1*
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[13] vs step[14]
+Comparison T (FIQNHXLJO) vs U (CFNQLOJH) => -1
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[13] vs step[15]
+Comparison T (FIQNHXLJO) vs X (HOQNJL) => -1*
+Steps: BGCEKADFPRVWSTUXZMQIJYLHNO
+
+step[13] vs step[16]
+Comparison T (FIQNHXLJO) vs Z (XNQITDHOJLFUPC) => 1*
+Steps: BGCEKADFPRVWSZUXTMQIJYLHNO
+
+step[13] vs step[17]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFPRVWSMUXTZQIJYLHNO
+
+step[13] vs step[18]
+Comparison M (ULCJTFNOHQIX) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVWSMUXTZQIJYLHNO
+
+step[13] vs step[19]
+Comparison M (ULCJTFNOHQIX) vs I (LJNOH) => -1*
+Steps: BGCEKADFPRVWSMUXTZQIJYLHNO
+
+step[13] vs step[20]
+Comparison M (ULCJTFNOHQIX) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSMUXTZQIJYLHNO
+
+step[13] vs step[21]
+Comparison M (ULCJTFNOHQIX) vs Y (JMHALOUCTFNQIX) => 1*
+Steps: BGCEKADFPRVWSYUXTZQIJMLHNO
+
+step[13] vs step[22]
+Comparison Y (JMHALOUCTFNQIX) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYUXTZQIJMLHNO
+
+step[13] vs step[23]
+Comparison Y (JMHALOUCTFNQIX) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYUXTZQIJMLHNO
+
+step[13] vs step[24]
+Comparison Y (JMHALOUCTFNQIX) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYUXTZQIJMLHNO
+
+step[13] vs step[25]
+Comparison Y (JMHALOUCTFNQIX) vs O () => -1*
+Steps: BGCEKADFPRVWSYUXTZQIJMLHNO
+
+step[14] vs step[15]
+Comparison U (CFNQLOJH) vs X (HOQNJL) => -3
+Steps: BGCEKADFPRVWSYUXTZQIJMLHNO
+
+step[14] vs step[16]
+Comparison U (CFNQLOJH) vs T (FIQNHXLJO) => 1
+Steps: BGCEKADFPRVWSYTXUZQIJMLHNO
+
+step[14] vs step[17]
+Comparison T (FIQNHXLJO) vs Z (XNQITDHOJLFUPC) => 1*
+Steps: BGCEKADFPRVWSYZXUTQIJMLHNO
+
+step[14] vs step[18]
+Comparison Z (XNQITDHOJLFUPC) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVWSYZXUTQIJMLHNO
+
+step[14] vs step[19]
+Comparison Z (XNQITDHOJLFUPC) vs I (LJNOH) => -1*
+Steps: BGCEKADFPRVWSYZXUTQIJMLHNO
+
+step[14] vs step[20]
+Comparison Z (XNQITDHOJLFUPC) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSYZXUTQIJMLHNO
+
+step[14] vs step[21]
+Comparison Z (XNQITDHOJLFUPC) vs M (ULCJTFNOHQIX) => 13
+Steps: BGCEKADFPRVWSYMXUTQIJZLHNO
+
+step[14] vs step[22]
+Comparison M (ULCJTFNOHQIX) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMXUTQIJZLHNO
+
+step[14] vs step[23]
+Comparison M (ULCJTFNOHQIX) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMXUTQIJZLHNO
+
+step[14] vs step[24]
+Comparison M (ULCJTFNOHQIX) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMXUTQIJZLHNO
+
+step[14] vs step[25]
+Comparison M (ULCJTFNOHQIX) vs O () => -1*
+Steps: BGCEKADFPRVWSYMXUTQIJZLHNO
+
+step[15] vs step[16]
+Comparison X (HOQNJL) vs U (CFNQLOJH) => 3
+Steps: BGCEKADFPRVWSYMUXTQIJZLHNO
+
+step[15] vs step[17]
+Comparison U (CFNQLOJH) vs T (FIQNHXLJO) => 1
+Steps: BGCEKADFPRVWSYMTXUQIJZLHNO
+
+step[15] vs step[18]
+Comparison T (FIQNHXLJO) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVWSYMTXUQIJZLHNO
+
+step[15] vs step[19]
+Comparison T (FIQNHXLJO) vs I (LJNOH) => -1*
+Steps: BGCEKADFPRVWSYMTXUQIJZLHNO
+
+step[15] vs step[20]
+Comparison T (FIQNHXLJO) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSYMTXUQIJZLHNO
+
+step[15] vs step[21]
+Comparison T (FIQNHXLJO) vs Z (XNQITDHOJLFUPC) => 1*
+Steps: BGCEKADFPRVWSYMZXUQIJTLHNO
+
+step[15] vs step[22]
+Comparison Z (XNQITDHOJLFUPC) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZXUQIJTLHNO
+
+step[15] vs step[23]
+Comparison Z (XNQITDHOJLFUPC) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZXUQIJTLHNO
+
+step[15] vs step[24]
+Comparison Z (XNQITDHOJLFUPC) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZXUQIJTLHNO
+
+step[15] vs step[25]
+Comparison Z (XNQITDHOJLFUPC) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZXUQIJTLHNO
+
+step[16] vs step[17]
+Comparison X (HOQNJL) vs U (CFNQLOJH) => 3
+Steps: BGCEKADFPRVWSYMZUXQIJTLHNO
+
+step[16] vs step[18]
+Comparison U (CFNQLOJH) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVWSYMZUXQIJTLHNO
+
+step[16] vs step[19]
+Comparison U (CFNQLOJH) vs I (LJNOH) => 12
+Steps: BGCEKADFPRVWSYMZIXQUJTLHNO
+
+step[16] vs step[20]
+Comparison I (LJNOH) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSYMZIXQUJTLHNO
+
+step[16] vs step[21]
+Comparison I (LJNOH) vs T (FIQNHXLJO) => 1*
+Steps: BGCEKADFPRVWSYMZTXQUJILHNO
+
+step[16] vs step[22]
+Comparison T (FIQNHXLJO) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZTXQUJILHNO
+
+step[16] vs step[23]
+Comparison T (FIQNHXLJO) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTXQUJILHNO
+
+step[16] vs step[24]
+Comparison T (FIQNHXLJO) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTXQUJILHNO
+
+step[16] vs step[25]
+Comparison T (FIQNHXLJO) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTXQUJILHNO
+
+step[17] vs step[18]
+Comparison X (HOQNJL) vs Q (JNOHL) => -1*
+Steps: BGCEKADFPRVWSYMZTXQUJILHNO
+
+step[17] vs step[19]
+Comparison X (HOQNJL) vs U (CFNQLOJH) => 3
+Steps: BGCEKADFPRVWSYMZTUQXJILHNO
+
+step[17] vs step[20]
+Comparison U (CFNQLOJH) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSYMZTUQXJILHNO
+
+step[17] vs step[21]
+Comparison U (CFNQLOJH) vs I (LJNOH) => 12
+Steps: BGCEKADFPRVWSYMZTIQXJULHNO
+
+step[17] vs step[22]
+Comparison I (LJNOH) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZTIQXJULHNO
+
+step[17] vs step[23]
+Comparison I (LJNOH) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTIQXJULHNO
+
+step[17] vs step[24]
+Comparison I (LJNOH) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIQXJULHNO
+
+step[17] vs step[25]
+Comparison I (LJNOH) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIQXJULHNO
+
+step[18] vs step[19]
+Comparison Q (JNOHL) vs X (HOQNJL) => 1*
+Steps: BGCEKADFPRVWSYMZTIXQJULHNO
+
+step[18] vs step[20]
+Comparison X (HOQNJL) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSYMZTIXQJULHNO
+
+step[18] vs step[21]
+Comparison X (HOQNJL) vs U (CFNQLOJH) => 3
+Steps: BGCEKADFPRVWSYMZTIUQJXLHNO
+
+step[18] vs step[22]
+Comparison U (CFNQLOJH) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZTIUQJXLHNO
+
+step[18] vs step[23]
+Comparison U (CFNQLOJH) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTIUQJXLHNO
+
+step[18] vs step[24]
+Comparison U (CFNQLOJH) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIUQJXLHNO
+
+step[18] vs step[25]
+Comparison U (CFNQLOJH) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUQJXLHNO
+
+step[19] vs step[20]
+Comparison Q (JNOHL) vs J (LHON) => -1*
+Steps: BGCEKADFPRVWSYMZTIUQJXLHNO
+
+step[19] vs step[21]
+Comparison Q (JNOHL) vs X (HOQNJL) => 1*
+Steps: BGCEKADFPRVWSYMZTIUXJQLHNO
+
+step[19] vs step[22]
+Comparison X (HOQNJL) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXJQLHNO
+
+step[19] vs step[23]
+Comparison X (HOQNJL) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXJQLHNO
+
+step[19] vs step[24]
+Comparison X (HOQNJL) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXJQLHNO
+
+step[19] vs step[25]
+Comparison X (HOQNJL) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUXJQLHNO
+
+step[20] vs step[21]
+Comparison J (LHON) vs Q (JNOHL) => 1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[20] vs step[22]
+Comparison Q (JNOHL) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[20] vs step[23]
+Comparison Q (JNOHL) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[20] vs step[24]
+Comparison Q (JNOHL) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[20] vs step[25]
+Comparison Q (JNOHL) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[21] vs step[22]
+Comparison J (LHON) vs L (NOH) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[21] vs step[23]
+Comparison J (LHON) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[21] vs step[24]
+Comparison J (LHON) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[21] vs step[25]
+Comparison J (LHON) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[22] vs step[23]
+Comparison L (NOH) vs H (ON) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[22] vs step[24]
+Comparison L (NOH) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[22] vs step[25]
+Comparison L (NOH) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[23] vs step[24]
+Comparison H (ON) vs N (O) => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[23] vs step[25]
+Comparison H (ON) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+step[24] vs step[25]
+Comparison N (O) vs O () => -1*
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+
+Steps: BGCEKADFPRVWSYMZTIUXQJLHNO
+Steps: GKRWBADEVMCFPSYZTIUXQJLHNO
