@@ -128,13 +128,24 @@ class MarbleGame
     {
         $new_marble_position = (($this->getCurrentPosition() + 1) % $this->getCircleSize()) + 1;
 
+        # 3rd version (~49 sec for part 1)
         array_splice($this->circle, $new_marble_position, 0, [$this->getCurrentMarble()]);
         $this->circle = array_values($this->circle);
 
+//        # 2nd version (~1 min 30 sec for part 1)
 //        for($i = $this->getCircleSize(); $i > $new_marble_position; $i--) {
 //            $this->circle[$i] = $this->circle[$i - 1];
 //        }
 //        $this->circle[$new_marble_position] = $this->getCurrentMarble();
+
+//        # 1st version (~1 min for part 1)
+//        $this->circle = array_merge(
+//            array_merge(
+//                array_slice($this->circle, 0, $new_marble_position),
+//                [$this->getCurrentMarble()]
+//            ),
+//            array_slice($this->circle, $new_marble_position)
+//        );
 
         $this->current_position = $new_marble_position;
     }
