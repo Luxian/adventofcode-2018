@@ -1,5 +1,10 @@
 <?php /** @noinspection AutoloadingIssuesInspection */
 
+$start = microtime(true);
+
+ini_set('memory_limit', '1G');
+gc_disable(); // avoid segmentation fault caused by PHP bug
+
 $tests = [
     ['players' =>  9, 'marble' =>   25, 'winning_score' => 32],
     ['players' => 10, 'marble' => 1618, 'winning_score' => 8317],
@@ -12,7 +17,7 @@ $tests = [
 foreach($tests as $test_no => $test) {
     $game = new MarbleGame($test['players'], $test['marble']);
     $game->play();
-    echo 'Test #' . ($test_no + 1) . ": {$test['players']} players, last marble worth {$test['marble']}. => ";
+    echo 'Test #' . ($test_no + 1) . ": {$test['players']} players, last marble {$test['marble']}. => ";
     if ($game->getWinningScore() !== $test['winning_score']) {
         echo 'FAILED' . PHP_EOL;
         echo "Expected winning score {$test['winning_score']} and got " . $game->getWinningScore() . PHP_EOL;
@@ -22,23 +27,23 @@ foreach($tests as $test_no => $test) {
 }
 
 
-$game = new MarbleGame(459, 72103);
+$game = new MarbleGame(459, 72103 * 100);
 $game->play();
 echo 'Winning score is: ' . $game->getWinningScore() . PHP_EOL;
 echo 'Winning elf is: ' . $game->getWinningElf() . PHP_EOL;
 
+echo 'Duration: ' . number_format(microtime(true) - $start, 5) . ' seconds. ' .
+    'Memory: ' . number_format(memory_get_peak_usage(true) / (1024 * 1024), 2) . ' MB.' .
+    PHP_EOL;
 
 class MarbleGame
 {
 
     /** @var int */
-    private $number_of_players;
+    private $numberOfPlayers;
 
     /** @var int */
-    private $last_marble_worth;
-
-    /** @var int[] */
-    private $circle = [0];
+    private $lastMarble;
 
     /** @var  int[] */
     private $scores = [];
@@ -49,32 +54,42 @@ class MarbleGame
     /** @var int */
     private $current_marble = 1;
 
-    /** @var int */
-    private $current_position = 0;
+    /** @var CircleItem */
+    private $currentItem;
 
-    public function __construct(int $number_of_players, int $last_marble_worth)
+    public function __construct(int $number_of_players, int $last_marble)
     {
-        $this->number_of_players = $number_of_players;
-        $this->last_marble_worth = $last_marble_worth;
+        $this->numberOfPlayers = $number_of_players;
+        $this->lastMarble = $last_marble;
+
+        $this->currentItem = new CircleItem(0);
+        $this->currentItem->setNext($this->currentItem);
+        $this->currentItem->setPrevious($this->currentItem);
     }
 
     public function play(): void
     {
-        while($this->getCurrentMarble() <= $this->last_marble_worth) {
-            if ($this->getCurrentMarble() % 23) {
-                $this->insertNextMarble();
+        while(($next_marble = $this->getCurrentMarble()) <= $this->lastMarble) {
+            echo 'Marble ' . $this->getCurrentMarble() . ' (' . round($this->getCurrentMarble() / $this->lastMarble * 100, 2) . "%)\r";
+            if ($next_marble % 23) {
+                $this->currentItem = $this->currentItem->getNext();
+                $this->currentItem->insertAfter(new CircleItem($this->getCurrentMarble()));
+                $this->currentItem = $this->currentItem->getNext();
             }
             else {
-                $position_to_remove = ($this->getCurrentPosition() + $this->getCircleSize() - 7) % $this->getCircleSize();
-                $this->addPointsToCurrentPlayer($this->getCurrentMarble());
-                $this->addPointsToCurrentPlayer($this->circle[$position_to_remove]);
+                $item_to_remove = $this->currentItem;
+                for($i = 0; $i < 7; $i++) {
+                    $item_to_remove = $item_to_remove->getPrevious();
+                }
 
-                $this->circle = array_merge(
-                    array_slice($this->circle, 0, $position_to_remove),
-                    array_slice($this->circle, $position_to_remove + 1)
-                );
+                $this->addPointsToCurrentPlayer($next_marble);
+                $this->addPointsToCurrentPlayer($item_to_remove->getMarbleValue());
 
-                $this->current_position = $position_to_remove;
+                $previous_item = $item_to_remove->getPrevious();
+                $previous_item->setNext($item_to_remove->getNext());
+                $item_to_remove->getNext()->setPrevious($previous_item);
+                $this->currentItem = $item_to_remove->getNext();
+                unset($previous_item);
             }
 
             $this->switchPlayer();
@@ -101,17 +116,7 @@ class MarbleGame
 
     private function switchPlayer(): void
     {
-        $this->current_player = ($this->current_player + 1) % $this->number_of_players;
-    }
-
-    private function getCircleSize(): int
-    {
-        return count($this->circle);
-    }
-
-    private function getCurrentPosition(): int
-    {
-        return $this->current_position;
+        $this->current_player = ($this->current_player + 1) % $this->numberOfPlayers;
     }
 
     private function getCurrentMarble(): int
@@ -124,37 +129,59 @@ class MarbleGame
         $this->current_marble++;
     }
 
-    private function insertNextMarble(): void
-    {
-        $new_marble_position = (($this->getCurrentPosition() + 1) % $this->getCircleSize()) + 1;
-
-        # 3rd version (~49 sec for part 1)
-        array_splice($this->circle, $new_marble_position, 0, [$this->getCurrentMarble()]);
-        $this->circle = array_values($this->circle);
-
-//        # 2nd version (~1 min 30 sec for part 1)
-//        for($i = $this->getCircleSize(); $i > $new_marble_position; $i--) {
-//            $this->circle[$i] = $this->circle[$i - 1];
-//        }
-//        $this->circle[$new_marble_position] = $this->getCurrentMarble();
-
-//        # 1st version (~1 min for part 1)
-//        $this->circle = array_merge(
-//            array_merge(
-//                array_slice($this->circle, 0, $new_marble_position),
-//                [$this->getCurrentMarble()]
-//            ),
-//            array_slice($this->circle, $new_marble_position)
-//        );
-
-        $this->current_position = $new_marble_position;
-    }
-
     private function addPointsToCurrentPlayer(int $points): void
     {
         if (!isset($this->scores[$this->getPlayer()])) {
             $this->scores[$this->getPlayer()] = 0;
         }
         $this->scores[$this->getPlayer()] += $points;
+    }
+}
+
+class CircleItem {
+
+    private $marbleValue;
+
+    private $next;
+
+    private $previous;
+
+    public function __construct(int $value)
+    {
+        $this->marbleValue = $value;
+    }
+
+    public function setNext(CircleItem $next): void
+    {
+        $this->next = &$next;
+    }
+
+    public function setPrevious(CircleItem $previous): void
+    {
+        $this->previous = &$previous;
+    }
+
+    public function getMarbleValue(): int
+    {
+        return $this->marbleValue;
+    }
+
+    public function &getNext(): CircleItem
+    {
+        return $this->next;
+    }
+
+    public function &getPrevious(): CircleItem
+    {
+        return $this->previous;
+    }
+
+    public function insertAfter(CircleItem $new_item): void
+    {
+        $new_item->setNext($this->getNext());
+        $new_item->setPrevious($this);
+
+        $this->getNext()->setPrevious($new_item);
+        $this->setNext($new_item);
     }
 }
